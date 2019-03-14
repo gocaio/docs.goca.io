@@ -1,0 +1,33 @@
+baseURL = "https://docs.goca.io/"
+languageCode = "en-en"
+title = "Goca &copy; documentation"
+theme = "gocaTheme"
+
+[menu]
+  [[menu.main]]
+    identifier = "basics"
+    name = "Basics"
+    title = "Basics"
+    url = "/basics/"
+    weight = -100
+
+  [[menu.main]]
+    identifier = "usage"
+    name = "Usage"
+    title = "Usage"
+    url = "/usage/"
+    weight = -90
+
+  [[menu.main]]
+    identifier = "pluginDev"
+    name = "Plugin System"
+    title = "Plugin System"
+    url = "/plugin/"
+    weight = -80
+
+  [[menu.main]]
+    identifier = "internals"
+    name = "Internals"
+    title = "Internals"
+    url = "/internals/"
+    weight = -70

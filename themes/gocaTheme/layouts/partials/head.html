@@ -1,0 +1,25 @@
+<head>
+    {{ .Hugo.Generator }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+
+    {{ template "_internal/opengraph.html" . }}
+
+    <link href="{{ "/css/bootstrap.min.css" | relURL }}" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+    <link href="{{ "/css/github.css" | relURL }}" rel="stylesheet" type="text/css">
+    <link href="{{ "/css/custom.css" | relURL }}" rel="stylesheet" type="text/css">
+    
+    <script src="{{ "/js/jquery.min.js" | relURL }}" type="text/javascript"></script>
+    <script src="{{ "/js/bootstrap.min.js" | relURL }}" type="text/javascript"></script>
+    <script src="{{ "/js/highlight.js" | relURL }}" type="text/javascript"></script>
+    <script src="{{ "/js/lunr.js" | relURL }}" type="text/javascript"></script>
+    <script src="{{ "/js/custom.js" | relURL }}" type="text/javascript"></script>
+
+</head>

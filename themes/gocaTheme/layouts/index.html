@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div id="main" class="container wrapper">
+    <div class="row">
+        <!-- Site menu -->
+        <div class="col-md-2">
+            <div id="content">
+                {{- partial "sidebar.html" . -}}
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="col-md-8">
+            <div id="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
