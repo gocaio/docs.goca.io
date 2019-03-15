@@ -3,6 +3,9 @@ languageCode = "en-en"
 title = "Goca &copy; documentation"
 theme = "gocaTheme"
 
+[outputs]
+	home = [ "HTML", "JSON"]
+
 [menu]
   [[menu.main]]
     identifier = "basics"

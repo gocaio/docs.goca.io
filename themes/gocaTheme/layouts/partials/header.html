@@ -4,8 +4,9 @@
             <img src="{{ "/img/goca.png" | relURL }}" alt="Goca">
             <span>Goca</span>
         </a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
+        <div class="searchbox">
+            <input data-search-input id="search-input" class="form-control" type="text" placeholder="Search">
+            <div id="search-results"></div>
+        </div>
     </div>
 </nav>
